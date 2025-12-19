@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Eco-Dashboard</title>
+    </head>
+
+    <body>
+        <button id="table_prediction_button">Show 2026 Projection</button>
+
+        <p id="table_description" aria-hidden="true">
+            This table presents carbon emissions in tons of CO₂ across departments
+            and quarters for sustainability analysis.
+        </p>
+
+
+        <table id="table_eco" border="1">
+            <caption>Carbon Emissions Report-2025 (in tons CO<sub>2</sub>)</caption>
+            
+            <thead>
+                <tr>
+                    <th id="Department" scope="col">Department</th>
+                    <th id="Quarter" scope="col">Quarter</th>
+                    <th id="Emissions" scope="col">Emissions (tons CO<sub>2</sub>)</th>
+                    <th id="Total" scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="Manufacturing" scope="row" rowspan="4">Manufacturing</th>
+                    <td headers="Manufacturing Quarter">Q1</td>
+                    <td headers="Manufacturing Emissions">1200</td>
+                    <td headers="Manufacturing Total" rowspan="4">5150</td>
+                </tr>
+
+                <tr>
+                    <td headers="Manufacturing Quarter" >Q2</td>
+                    <td headers="Manufacturing Emissions">1350</td>
+                </tr>
+
+                <tr>
+                    <td headers="Manufacturing Quarter" >Q3</td>
+                    <td headers="Manufacturing Emissions">1100</td>
+                </tr>
+
+                <tr>
+                    <td headers="Manufacturing Quarter" >Q4</td>
+                    <td headers="Manufacturing Emissions">1500</td>
+                </tr>
+
+
+                <tr>
+                    <th id="IT" scope="row" rowspan="4">IT Operations</th>
+                    <td headers="IT Quarter">Q1</td>
+                    <td headers="IT Emissions">200</td>
+                    <td headers="IT Total" rowspan="4">810</td>
+                </tr>
+
+                <tr>
+                    <td headers="IT Quarter" >Q2</td>
+                    <td headers="IT Emissions">180</td>
+                </tr>
+
+                <tr>
+                    <td headers="IT Quarter" >Q3</td>
+                    <td headers="IT Emissions">220</td>
+                </tr>
+
+                <tr>
+                    <td headers="IT Quarter" >Q4</td>
+                    <td headers="IT Emissions">210</td>
+                </tr>
+
+
+                <tr>
+                    <th id="Logistics" scope="row" rowspan="4">Logistics</th>
+                    <td headers="Logistics Quarter">Q1</td>
+                    <td headers="Logistics Emissions">800</td>
+                    <td headers="Logistics Total" rowspan="4">3300</td>
+                </tr>
+
+                <tr>
+                    <td headers="Logistics Quarter" >Q2</td>
+                    <td headers="Logistics Emissions">900</td>
+                </tr>
+
+                <tr>
+                    <td headers="Logistics Quarter" >Q3</td>
+                    <td headers="Logistics Emissions">850</td>
+                </tr>
+
+                <tr>
+                    <td headers="Logistics Quarter" >Q4</td>
+                    <td headers="Logistics Emissions">210</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th id="Total_footer" scope="row" colspan="2">Total (by quarter)</th>
+                    <td headers="Total_footer Emissions">9260</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th id="quarter_total" scope="row" rowspan="2" colspan="2">Quarter Totals</th>
+                    <td>
+                        <ul>
+                            <li>Q1: 2200</li>
+                            <li>Q2: 2280</li>
+                            <li>Q3: 2220</li>
+                            <li>Q4: 2560</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+
+</html>
